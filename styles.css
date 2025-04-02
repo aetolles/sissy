@@ -1,7 +1,7 @@
 :root {
     --text-color: #31695a;
     --main-background: ##7fd5a6;
-    --secondary-background: #231f20;
+    --secondary-background: #316936;
     --accent-color: #fcce01;
 }
 
@@ -26,6 +26,7 @@ body {
     font-weight: bold;
 }
 
+/*
 @media (max-width: 500px) {
     .navbar a img {
         display: none;
@@ -39,6 +40,8 @@ body {
         flex-wrap: wrap;
     }
 }
+
+*/
 
 h2 {
     text-align: center;
