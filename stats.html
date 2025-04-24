@@ -1,6 +1,66 @@
 <!DOCTYPE html>
 <html>
-   <label>
-        statistics
-    </label>
+   <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+    <div class="navbar">
+        <a href="index.html">
+            Home
+        </a>
+        <a href="iloveyou.html">
+            I Love You!
+        </a>
+        <b href="stats.html">
+            Statistics Help
+        </b>
+    </div>
+
+    <main>
+        <div class="content">
+            <h1 class="title">Statistics</h1>      
+
+
+            <p>
+                explain binomial
+            </p>
+            <p>
+                explain geometric
+            </p>
+
+
+            <form onsubmit="event.preventDefault(); performMath();" class="styled-form">
+                <label for="num1">Number 1:</label>
+                <input type="text" id="num1" name="num1" class="input-field">
+                <br><br>
+                <label for="num2">Number 2:</label>
+                <input type="text" id="num2" name="num2" class="input-field">
+                <br><br>
+                <input type="submit" value="Add Numbers" class="submit-button">
+            </form>
+            <div id="output"></div>
+        </div>
+    </main>
+
+
+
+
+    <script>
+        function performMath() {
+            // Get the values from the input fields
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+
+            // Perform the addition
+            var result = num1 + num2;
+
+            // Display the result
+            document.getElementById("output").innerHTML = "The result of addition is: " + result;
+        }
+    </script>
+
+
+</body>
 </html>
+
